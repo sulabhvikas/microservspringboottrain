@@ -1,0 +1,21 @@
+---
+server:
+  port: 8888 
+security:
+  basic:
+    enabled: true 
+  user:
+    name: pluralsight
+    password: pluralsight 
+spring:
+  cloud:
+    config:
+      server:
+        encrypt:
+          enabled: true
+        git:
+          uri: https://github.com/sulabhvikas/spring-cloudconfig-blr-tolls
+          username: vikas.sulabh@gmail.com
+          password: shreya@1226
+          search-paths:
+            - 'station*'
